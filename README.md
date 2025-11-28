@@ -2,7 +2,6 @@
 
 **NutriSnap** is a smart, AI-powered calorie counter application that uses Google's Gemini Pro Vision API to analyze food images and provide instant nutritional insights.
 
-![NutriSnap Demo](https://via.placeholder.com/800x400?text=NutriSnap+Demo+Image)
 
 ## 🏷️ Tags & Keywords
 `calorie-counter` `food-recognition` `gemini-api` `streamlit` `python` `ai-nutrition` `health-tech` `computer-vision` `machine-learning` `diet-tracker`
