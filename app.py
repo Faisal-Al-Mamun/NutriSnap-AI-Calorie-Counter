@@ -28,23 +28,45 @@ st.markdown("""
     }
     .stButton>button {
         width: 100%;
-        background-color: #ff4b4b;
-        color: white;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
         border-radius: 12px;
         height: 55px;
         font-size: 18px;
         font-weight: 600;
         border: none;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 14px 0 rgba(255, 75, 75, 0.39);
+        box-shadow: 0 4px 20px 0 rgba(102, 126, 234, 0.4);
+        cursor: pointer;
+    }
+    .stButton>button p {
+        color: white !important;
     }
     .stButton>button:hover {
+        background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
+        color: white !important;
+        box-shadow: 0 6px 25px 0 rgba(102, 126, 234, 0.6);
+        transform: translateY(-2px);
+    }
+    .stButton>button:focus {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
+        box-shadow: 0 4px 20px 0 rgba(102, 126, 234, 0.6);
+    }
+    .stButton>button:active {
+        transform: translateY(0px);
+        box-shadow: 0 4px 15px 0 rgba(102, 126, 234, 0.5);
+        color: white !important;
+    }
     @keyframes fadeIn {
         0% { opacity: 0; transform: translateY(20px); }
         100% { opacity: 1; transform: translateY(0); }
     }
     h1 {
-        color: #ff4b4b;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
         text-align: center;
         font-family: 'Inter', sans-serif;
         font-weight: 800;
@@ -85,7 +107,7 @@ with col1:
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
         st.markdown('<div class="uploaded-image-container">', unsafe_allow_html=True)
-        st.image(image, caption="Your Meal", width="stretch")
+        st.image(image, caption="Your Meal", use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
