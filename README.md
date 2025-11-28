@@ -61,6 +61,3 @@
 -   [Python-dotenv](https://pypi.org/project/python-dotenv/) - Environment management.
 -   [Pillow (PIL)](https://python-pillow.org/) - Image processing.
 
-## License
-
-This project is open-source and available under the MIT License.
